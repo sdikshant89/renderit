@@ -16,7 +16,7 @@ const StyledFab = styled(Fab)({
   margin: "0 auto",
 });
 
-export default function AppBarBottom() {
+export default function AppBarBottom({ onButtonClick }) {
   return (
     <AppBar
       position="fixed"
@@ -34,6 +34,7 @@ export default function AppBarBottom() {
           color="secondary"
           aria-label="add"
           sx={{ transform: "scale(1.4)" }}
+          onClick={onButtonClick}
         >
           <AddIcon />
         </StyledFab>
